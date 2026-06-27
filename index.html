@@ -3,82 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Barei - Développeur Full-Stack</title>
+    <title>Anthony Barei — Développeur Full-Stack</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <header class="header">
-                <h1>Anthony Barei</h1>
-                <h2>Développeur Full-Stack</h2>
-                <p class="tech-stack">Laravel / React / Python</p>
-            </header>
+    <div class="glow" id="glow"></div>
 
-            <section class="about">
-                <h3>À propos</h3>
-                <p>Je suis développeur full-stack depuis plus de 8 ans, plutôt à l'aise avec Laravel, React, et tout ce qui touche au JavaScript moderne. J'adore bricoler des outils simples qui rendent service, que ce soit un dashboard radio, une app de live interactif ou un bot Twitch qui pose des questions débiles.</p>
-                <p>Côté back, je fais surtout du PHP (Laravel) et pas mal de Python quand il faut automatiser, parser, ou gérer des flux de données. Côté front, je suis à fond sur React, avec une préférence pour les interfaces claires, rapides et bien pensées.</p>
-                <p>J'aime quand les choses sont lisibles, fiables, et un minimum stylées. Et si ça peut être fun à utiliser ou à coder, c'est encore mieux.</p>
-            </section>
+    <div class="wrap">
+        <!-- Hero / terminal -->
+        <section class="terminal">
+            <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-path">~/anthony-barei — zsh</span>
+            </div>
+            <div class="terminal-body">
+                <div class="reveal cmd"><span class="prompt">$</span> whoami</div>
+                <h1 class="reveal name" data-delay="80">Anthony Barei<span class="caret"></span></h1>
+                <div class="reveal kv" data-delay="150">
+                    <div><span class="key">role&nbsp;&nbsp;</span> = <span class="str-role">"Développeur Full-Stack"</span></div>
+                    <div><span class="key">stack&nbsp;</span> = [<span class="str">"Laravel"</span>, <span class="str">"React"</span>, <span class="str">"Python"</span>]</div>
+                    <div><span class="key">since&nbsp;</span> = <span class="num" data-years>7</span> <span class="comment">// années d'expérience</span></div>
+                </div>
+            </div>
+        </section>
 
-            <section class="projects">
-                <h3>Projets</h3>
-                <ul class="project-list">
-                    <li>
-                        <span class="project-name">pmpp</span>
-                        <span class="status status-down">Down</span>
-                    </li>
-                    <li>
-                        <span class="project-name">MusicRecap</span>
-                        <span class="status status-down">Down</span>
-                    </li>
-                    <li>
-                        <a href="https://remuzat.anthonybarei.fr" target="_blank" class="project-name">Remuzat<i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <span class="status status-up">Up</span>
-                    </li>
-                    <li>
-                        <a href="https://github.com/AnthonyBarei/StremioCacheProcessor" target="_blank" class="project-name">StremioCacheProcessor <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <span class="status status-dev">Dev</span>
-                    </li>
-                    <li>
-                        <a href="https://github.com/AnthonyBarei/shield-converter" target="_blank" class="project-name">Shield Converter <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <span class="status status-dev">Dev</span>
-                    </li>
-                    <li>
-                        <a href="https://grimoire.anthonybarei.fr/" target="_blank" class="project-name">Aravella's Grimoire <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <span class="status status-up">Up</span>
-                    </li>
-                    <li>
-                        <a href="https://github.com/AnthonyBarei/dnd-discord-bot" target="_blank" class="project-name">D&D Discord Bot <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <span class="status status-up">Up</span>
-                    </li>
-                </ul>
-            </section>
+        <!-- About -->
+        <section class="block">
+            <div class="reveal section-label">// about</div>
+            <div class="about">
+                <p class="reveal" data-delay="40">Je suis développeur full-stack depuis plus de <span data-years>7</span> ans, plutôt à l'aise avec Laravel, React, et tout ce qui touche au JavaScript moderne. J'adore bricoler des outils simples qui rendent service, que ce soit un dashboard radio, une app de live interactif ou un bot Twitch qui pose des questions débiles.</p>
+                <p class="reveal" data-delay="100">Côté back, je fais surtout du PHP (Laravel) et pas mal de Python quand il faut automatiser, parser, ou gérer des flux de données. Côté front, je suis à fond sur React, avec une préférence pour les interfaces claires, rapides et bien pensées.</p>
+                <p class="reveal" data-delay="160">J'aime quand les choses sont lisibles, fiables, et un minimum stylées. Et si ça peut être fun à utiliser ou à coder, c'est encore mieux.</p>
+            </div>
+        </section>
 
-            <nav class="links">
-                <a href="https://github.com/AnthonyBarei" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>Github</span>
-                </a>
-                <a href="https://www.linkedin.com/in/anthony-barei-768b76144/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-                <a href="CV_Anthony_Barei.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i>
-                    <span>CV</span>
-                </a>
-            </nav>
-        </div>
-    </main>
-    <footer class="footer">
-        <p>Copyright © Anthony Barei <span id="current-year"></span>.</p>
-    </footer>
+        <!-- Skills -->
+        <section class="block">
+            <div class="reveal section-label">// stack</div>
+            <div class="skills-grid" id="skills"></div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="block">
+            <div class="reveal section-label">// git log --parcours</div>
+            <div class="timeline" id="timeline"></div>
+        </section>
+
+        <!-- Projects -->
+        <section class="block">
+            <div class="reveal section-label">// projects — <span class="up">git status</span></div>
+            <div class="projects" id="projects"></div>
+        </section>
+
+        <!-- Contact -->
+        <section class="reveal contact">
+            <div class="contact-cmd"><span class="prompt">$</span> contact --me</div>
+            <div class="contact-links" id="links"></div>
+        </section>
+
+        <div class="footer">© Anthony Barei 2026</div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
